@@ -9,11 +9,11 @@ btn.onclick = function () {
   if ((toF.checked)&&(toC.checked)) {result.textContent = "choose one unit !"} 
   else  if (toF.checked) {
     temp = input.value ; 
-    result.textContent = ((temp * 1.8) +32).toFixed(1) + "F°" ;
+    result.textContent = ((temp * 1.8) +32).toFixed(1) + " F°" ;
 
   } else if (toC.checked) {
     temp = input.value ;
-    result.textContent = ((temp - 32) * 5/9).toFixed(1)+ "C°" ;
+    result.textContent = ((temp - 32) * 5/9).toFixed(1)+ " C°" ;
   }
   
 };
