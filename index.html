@@ -8,21 +8,47 @@
 </head>
 <body>
     <div id="all">
+
         
-        <label >temperature :</label>
-        <input type="text" id="num">
+        
+        <input type="number" id="num" placeholder="0">
     
         
         
-        <div >
-            <input type="checkbox" class=" check" id="tof" >
-            <label class=" check" >C° to F°</label> <br>
+        <div id="units">
+         
+            <div class="mid">
+            <label class="label">from : </label>
+            <select class="select" id="from"> from :
+                <option value="c">C°</option>
+                <option value="f">F°</option>
+                <option value="m">m</option>
+                <option value="ft">feet</option>
+                <option value="kg">kg</option>
+                <option value="lbs">lbs</option>
+                
 
-           
-            <input type="checkbox" class=" check" id="toc" >
-             <label class=" check" >F° to C°</label><br>
+            </select> 
+            </div>   
+
+        
+          <div class="mid" >
+
+             <label  class="label">to : </label> 
+
+           <select class="select" id="to"> to :
+                <option value="c">C°</option>
+                <option value="f" >F°</option>
+                <option value="m">m</option>
+                <option value="ft">feet</option>
+                <option value="kg">kg</option>
+                <option value="lbs">lbs</option>
+                
+
+            </select> </div>
+
         </div>
-        <button id="btn"> convert </button><br><br><br>
+        <button id="btn"> convert </button>
 
         <div id="result">0</div>
 
